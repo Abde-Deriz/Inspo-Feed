@@ -1,0 +1,9 @@
+# Allow all reputable bots
+User-agent: *
+Allow: /
+
+# Disallow crawling of search results pages to save crawl budget
+Disallow: /search
+
+# Sitemap location
+Sitemap: https://pixelstash.io/sitemap.xml

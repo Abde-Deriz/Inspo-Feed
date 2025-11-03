@@ -3,7 +3,38 @@ User-agent: *
 Allow: /
 
 # Disallow crawling of search results pages to save crawl budget
+# (These are dynamic and don't need to be indexed)
 Disallow: /search
 
+# Allow crawling of important pages
+Allow: /explore
+Allow: /view/
+Allow: /profile
+Allow: /favorites
+
+# Crawl-delay for aggressive bots (optional, adjust as needed)
+User-agent: *
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /search
+
+User-agent: Bingbot
+Allow: /
+Disallow: /search
+
+User-agent: Slurp
+Allow: /
+Disallow: /search
+
+# Block bad bots (add more as needed)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
 # Sitemap location
-Sitemap: https://pixelstash.io/sitemap.xml
+Sitemap: https://Pexelstash.io/sitemap.xml
